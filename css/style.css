@@ -1,0 +1,155 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E0A0A;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Header & Navigation Section */
+
+.header-section {
+    align-items: center;
+    display: flex;
+    height: 11rem;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.navigation-section-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.link {
+    color: #FFF;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: #14B474;
+}
+
+.circle-1 {
+    color: #09925B;
+}
+
+.circle-2 {
+    color: #233CCC;
+}
+
+.circle-3 {
+    color: #353131;
+}
+
+/* Hero Section */
+
+.primary-section {
+    padding: 0 2rem 10rem 2rem;
+}
+
+.primary {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 140rem;
+}
+
+.input-box {
+    background-color: #0E0A0A;
+    border: 3px solid #313030;
+    color: #FFF;
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.5rem;
+    height: 15rem;
+    letter-spacing: 2.5px;
+    padding: 0rem 0.5rem;
+    overflow: hidden;
+    resize: none;
+    text-align: center;
+}
+
+.input-box:focus {
+    outline: none;
+}
+
+.enter-button {
+    background-color: #09925B;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.enter-button:hover {
+    background-color: #14B474;
+}
+
+.output-box {
+    background-color: #0E0A0A;
+    border: 3px solid #313030;
+    color: #FFF;
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-size: 3.5rem;
+    height: 15rem;
+    letter-spacing: 2.5px;
+    padding: 0 0.5rem;
+    resize: none;
+    text-align: center;
+}
+
+.save-box {
+    background-color: #1B1919;
+    color: #6B6B6B;
+    height: 5.5rem;
+    list-style: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+    padding: 0rem 0.5rem;
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-top: 2rem;
+}
+
+#clone {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    left: -9999px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    padding: 10px;
+    position: absolute;
+    top: -9999px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 400px;
+    visibility: hidden;
+}
