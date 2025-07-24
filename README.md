@@ -38,4 +38,4 @@ Kurrun Behl
 
 📄 License
 
-This application is open and free to use with no restrictions at this moment in time.
+This application is open and free-to-use with no restrictions at this moment in time.
