@@ -24,13 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function resizeInput() {
     syncStyles();
     cloneBox.textContent = inputBox.value || " ";
-
     let fontSize = baseFont;
     cloneBox.style.fontSize = fontSize + "rem";
-
     const maxHeight = inputBox.clientHeight;
 
-    // Decrease font size until it fits without scrolling
     while (cloneBox.scrollHeight > maxHeight && fontSize > minimumFont) {
       fontSize--;
       cloneBox.style.fontSize = fontSize + "rem";
