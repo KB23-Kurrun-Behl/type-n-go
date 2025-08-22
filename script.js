@@ -24,10 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function resizeInput() {
     syncStyles();
     cloneBox.textContent = inputBox.value || " ";
+
     let fontSize = baseFont;
     cloneBox.style.fontSize = fontSize + "rem";
+
     const maxHeight = inputBox.clientHeight;
 
+    // Decrease font size until it fits without scrolling
     while (cloneBox.scrollHeight > maxHeight && fontSize > minimumFont) {
       fontSize--;
       cloneBox.style.fontSize = fontSize + "rem";
@@ -41,6 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Setting the required JavaScript for the input and output box
 
   let dataSet = [];
+
+    inputBox.addEventListener("keydown", function (event) {
+    if (event.keyCode == 13) {
+      enterButton.click();
+      inputBox.value = "";
+      event.preventDefault();
+    } else if (event.shiftKey) {
+      inputBox.value = inputBox.value + "\n";
+    }
+  });
 
   function outputInput() {
     dataSet.push(inputBox.value);
@@ -63,18 +76,19 @@ document.addEventListener("DOMContentLoaded", () => {
       inputBox.focus();
   }
 
-  inputBox.addEventListener("keypress", function (event) {
-    if (event.keyCode == 13) {
-      enterButton.click();
-      inputBox.value = "";
-      event.preventDefault();
-    }
-  });
-
   function addData() {
     let template = dataSet.map(data => `<li>${data}</li>`).join('\n');
     document.getElementById("save-box-id").innerHTML = template;  
   }
+
+  // Setting the JavaScript to add a new line inside the input box
+
+  // inputBox.addEventListener("keypress", function(event) {
+  //   if (event.keyCode == 16) {
+  //       inputBox.value = inputBox.value + "\n";
+  //       event.preventDefault();
+  //   }
+  // })
 
   // Setting the option for a user to add a bold and non-bold effect to the input box
 
