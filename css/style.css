@@ -155,3 +155,19 @@ body {
     width: 400px;
     visibility: hidden;
 }
+
+/* Footer Section */
+
+.footer {
+    background-color: #130D0D;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.copyright {
+    color: #FFF;
+    font-family: "Outfit", sans-serif;
+    margin-left: 2rem;
+}

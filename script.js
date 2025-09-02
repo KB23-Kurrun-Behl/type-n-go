@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       enterButton.click();
       inputBox.value = "";
       event.preventDefault();
-    } else if (event.shiftKey) {
+    } else if (event.altKey && event.keyCode == 40) {
       inputBox.value = inputBox.value + "\n";
     }
   });
