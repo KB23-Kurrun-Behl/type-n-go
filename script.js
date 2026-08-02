@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputBox = document.getElementById("input-box-id");
   const cloneBox = document.getElementById("clone");
   
-  const baseFont = 3.5
+  const baseFont = 3
   const minimumFont = 2
 
   const enterButton = document.getElementById("enter-button-id");
+  const saveButton = document.getElementById("save-button-id");
   const outputBox = document.getElementById("output-box-id");
   const saveBox = document.getElementById("save-box-id");
 
@@ -43,8 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Setting the required JavaScript for the input and output box
 
-  let dataSet = [];
-
     inputBox.addEventListener("keydown", function (event) {
     if (event.keyCode == 13) {
       enterButton.click();
@@ -64,6 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
     addData();
   }
 
+  function saveInput() {
+    saveBox.innerHTML = inputBox.value;
+    inputBox.value = "";
+    inputBox.focus();
+  }
+
   function copyAtt(target, source) {
     [...source.attributes].forEach(attr => {
       target.setAttribute(attr.nodeName, attr.nodeValue)
@@ -71,10 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   enterButton.addEventListener("click", outputInput);
+  saveButton.addEventListener("click", saveInput);
     function copyText() {
       inputBox.value = saveBox.innerHTML;
       inputBox.focus();
   }
+
+  let dataSet = [];
 
   function addData() {
     let template = dataSet.map(data => `<li>${data}</li>`).join('\n');
@@ -96,12 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const nonBoldFont = document.getElementById("non-bold-font-link");
 
   boldFont.onclick = function() {
-    inputBox.style.fontWeight = "800";
+    inputBox.style.fontWeight = "900";
     inputBox.focus();
   }
 
   nonBoldFont.onclick = function() {
-    inputBox.style.fontWeight = "100";
+    inputBox.style.fontWeight = "600";
     inputBox.focus();
   }
 

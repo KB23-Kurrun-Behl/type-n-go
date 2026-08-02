@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <title>Type N' Go</title> 
 </head>
@@ -18,24 +18,31 @@
             <ul class="navigation-section-list">
                 <li class="link" id="non-bold-font-link">Non-Bold Font</li>
                 <li class="link" id="bold-font-link">Bold Font</li>
-                <li class="link" id="green-background-link">Green <i class="fa-solid fa-circle circle-1"></i></li>
-                <li class="link" id="blue-background-link">Blue <i class="fa-solid fa-circle circle-2"></i></li>
-                <li class="link" id="black-background-link">Black <i class="fa-solid fa-circle circle-3"></i></li>
+                <li class="link" id="green-background-link">Green &nbsp;<i class="fa-solid fa-circle circle-1"></i></li>
+                <li class="link" id="blue-background-link">Blue &nbsp;<i class="fa-solid fa-circle circle-2"></i></li>
+                <li class="link" id="black-background-link">Black &nbsp;<i class="fa-solid fa-circle circle-3"></i></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="primary-section">
             <div class="primary">
-                <textarea class="input-box" type="text" id="input-box-id" placeholder="Start Typing..." autofocus></textarea>
+                <textarea class="input-box" type="text" id="input-box-id" placeholder="Start Typing" autofocus></textarea>
                 <div id="clone"></div>
-                <input class="enter-button" type="button" id="enter-button-id" value="GO &#10148;">
+                <div class="buttons">
+                    <input class="enter-button" type="button" id="enter-button-id" value="Send">
+                    <input class="save-button" type="button" id="save-button-id" value="Save">
+                </div>
                 <div class="output-box" id="output-box-id"></div>
+                <ul class="save-box" id="save-box-id"></ul>
             </div>
             <footer class="footer-section">
                 <div class="footer">
                     <div class="logo-col">
-                        <p class="copyright">Copyright &copy; 2025 By Type N' Go - The IT Team Birmingham</p>
+                        <p class="footer-information">
+                            <b>Alt</b> + <b>Down Key</b> To Start A <b>New</b> Line <br>
+                            <b>Enter</b> To <b>Send</b> Text
+                        </p>
                     </div>
                 </div>
             </footer>

@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #0E0A0A;
+    background-image: linear-gradient(to top, #020101, #292929);
+    font-family: "Manrope", sans-serif;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -27,16 +28,15 @@ body {
 
 .navigation-section-list {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     list-style: none;
 }
 
 .link {
     color: #FFF;
     cursor: pointer;
-    font-family: "Outfit", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.3rem;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .circle-3 {
-    color: #353131;
+    color: #000;
 }
 
 /* Hero Section */
@@ -73,36 +73,49 @@ body {
 
 .input-box {
     background-color: #0E0A0A;
-    border: 3px solid #313030;
+    border: none;
     color: #FFF;
     display: inline-block;
-    font-family: "Outfit", sans-serif;
-    font-size: 3.5rem;
-    height: 15rem;
-    letter-spacing: 2.5px;
+    font-size: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    height: 13rem;
+    letter-spacing: 1px;
     padding: 0rem 0.5rem;
     overflow: hidden;
     resize: none;
     text-align: center;
-    white-space: pre-wrap;  /* This line of code was added after adding the "SHIFT+NEW-LINE" feature */
+    white-space: pre-wrap;  /* This line of code was added after adding the ALT + DOWN KEY feature */
 }
 
 .input-box:focus {
     outline: none;
 }
 
+.input-box::placeholder {
+    font-size: 3rem;
+}
+
+.buttons {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .enter-button {
     background-color: #09925B;
     border: none;
-    border-radius: 15px;
     color: #FFF;
     cursor: pointer;
     display: inline-block;
-    font-family: "Outfit", sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
     margin: 2rem auto;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
 
@@ -110,15 +123,34 @@ body {
     background-color: #14B474;
 }
 
+.save-button {
+    background-color: #303030;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #4D4D4D;
+}
+
 .output-box {
     background-color: #0E0A0A;
-    border: 3px solid #313030;
+    border: none;
     color: #FFF;
     display: inline-block;
-    font-family: "Outfit", sans-serif;
-    font-size: 3.5rem;
-    height: 15rem;
-    letter-spacing: 2.5px;
+    font-size: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    height: 13rem;
+    letter-spacing: 1px;
     padding: 0 0.5rem;
     resize: none;
     text-align: center;
@@ -126,24 +158,23 @@ body {
 }
 
 .save-box {
-    background-color: #1B1919;
-    color: #6B6B6B;
-    height: 5.5rem;
+    background-color: #292929;
+    color: #FFF;
+    height: 7rem;
     list-style: none;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: auto;
-    font-family: "Outfit", sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     padding: 0rem 0.5rem;
     text-align: center;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     margin-top: 2rem;
 }
 
 #clone {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     left: -9999px;
     line-height: 1.2;
     overflow-wrap: break-word;
@@ -159,15 +190,14 @@ body {
 /* Footer Section */
 
 .footer {
-    background-color: #130D0D;
+    background-color: none;
     max-width: 130rem;
     margin: 0 auto;
     padding: 2rem 0;
     text-align: center;
 }
 
-.copyright {
+.footer-information {
     color: #FFF;
-    font-family: "Outfit", sans-serif;
     margin-left: 2rem;
 }
