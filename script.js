@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       inputBox.style.fontSize = fontSizeChange.value + "rem";
     }
     })
+    inputBox.style.fontSize = baseFont + "rem";
   }
 
   inputBox.addEventListener("input", changeFontSize); // The second value here was the name of the original resize function which is resizeInput
