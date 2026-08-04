@@ -57,6 +57,15 @@ body {
     color: #000;
 }
 
+.font-size-input-class {
+    background-color: #0E0A0A;
+    border: none;
+    color: #FFF;
+    font-size: 0.6rem;
+    font-family: "Manrope", sans-serif;
+    padding: 0.6rem 0.6rem;
+}
+
 /* Hero Section */
 
 .primary-section {
@@ -76,7 +85,7 @@ body {
     border: none;
     color: #FFF;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem; /* This was originally set to the value of 2 for the previous version of the automatic resize font size function */ 
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     height: 13rem;
@@ -124,7 +133,7 @@ body {
 }
 
 .save-button {
-    background-color: #303030;
+    background-color: #0E0A0A;
     border: none;
     color: #FFF;
     cursor: pointer;
@@ -158,8 +167,8 @@ body {
 }
 
 .save-box {
-    background-color: #292929;
-    color: #FFF;
+    background-color: #161616;
+    color: #727272;
     height: 7rem;
     list-style: none;
     overflow: scroll;
