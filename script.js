@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const baseFont = 3
   const minimumFont = 2
 
-  const fontChange = document.getElementById("font-size-input");
+  const fontSizeChange = document.getElementById("font-size-input");
   const enterButton = document.getElementById("enter-button-id");
   const saveButton = document.getElementById("save-button-id");
   const outputBox = document.getElementById("output-box-id");
@@ -42,13 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
   } */
 
   function changeFontSize() {
-    fontChange.addEventListener("keydown", function (event) {
+    fontSizeChange.addEventListener("keydown", function (event) {
     if (event.keyCode == 13) {
-      inputBox.style.fontSize = fontChange.value + "rem";
+      inputBox.style.fontSize = fontSizeChange.value + "rem";
     }
     })
   }
-  
+
   inputBox.addEventListener("input", changeFontSize); // The second value here was the name of the original resize function which is resizeInput
 
   // Setting the required JavaScript for the input and output box
